@@ -39,7 +39,6 @@ class MainActivity : ComponentActivity() {
                         message = stringResource(R.string.happy_birthday_text),
                         from = stringResource(R.string.signature_text),
                         modifier = Modifier
-                            .fillMaxSize()
                             .padding(innerPadding)
                     )
                 }
@@ -54,7 +53,6 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
-//            .fillMaxSize()
     ) {
         Text(
             text = message,
